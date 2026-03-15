@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!response.ok) throw new Error('Failed to fetch quote');
         const data = await response.json();
         quoteText.textContent = `"${data.content}"`;
-        quoteAuthor.textContent = `— ${data.author}`;
+        quoteAuthor.textContent = `— ${data.author}`; 
       } catch (error) {
         quoteText.textContent = 'Oops! Could not fetch a quote.';
         quoteAuthor.textContent = '';
