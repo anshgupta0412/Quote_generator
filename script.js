@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     button.addEventListener('click', getQuote);
-  
     // Load an initial quote
     getQuote();
   });
